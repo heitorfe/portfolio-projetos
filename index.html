@@ -9,9 +9,13 @@
 		<title>Portfólio de Projetos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link id="theme-link" rel="stylesheet" href="assets/css/main.css">
+
 	</head>
+	
+	
 	<body class="is-preload">
+		
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -22,17 +26,17 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Portfólio de projetos</strong> em ciência de dados</a>
+									<a href="index.html" class="logo"><strong>Portfólio de projetos</strong> em dados e software</a>
 									<ul class="icons">
 									</ul>
 								</header>
 
 								<!-- languages -->
-								<header id="lang">
-									<br>
-									<a a href="#" class="image"><img src="images/bra.svg" width=50 height=40 alt=""></a>
-
-								<a a href="https://heitorfe.github.io/portifolio-projetos/indexEN" class="image"><img src="images/usa.svg" width=50 height=40 alt=""></a>
+								<header id="lang" style="display: flex; align-items: center; gap: 10px;">
+									<a href="#" class="image"><img src="images/bra.svg" width=50 height=40 alt=""></a>
+									<a href="https://heitorfe.github.io/portifolio-projetos/indexEN" class="image"><img src="images/usa.svg" width=50 height=40 alt=""></a>
+									<button id="theme-toggle">Toggle Theme</button>
+								</header>
 
 
 
@@ -418,6 +422,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/theme-toggle.js"></script>
 
 	</body>
 </html>
