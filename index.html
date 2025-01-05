@@ -156,157 +156,173 @@
 
 										</section>
 
+
 							<!-- Section -->
-								<section>
-									<header class="major">
-										<h1>Projetos em Ciência de Dados</h1>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/datachallenge.png" alt="" /></a>
-											<h3>Data Challenge Stone 2022</h3>
-											<p>Fui semifinalista no Data Challenge Stone 2022. Nesse desafio da Stone, minha tarefa foi utilizar dados históricos de um programa de empréstimos desde 2019 até abril de 2022 de 14,7 mil clientes. O problema de negócio era relacionado ao acionamento dos clientes que estavam com pagamento atrasado. A pergunta a ser respondida foi: Qual a curva ideal de vezes que devemos acionar um cliente? Para respondê-la utilizei Python e Power BI para responder a pergunta com a análise de dados. <p>
+							<section>
+								<header class="major">
+									<h1>Projetos</h1>
+								</header>
+								<div class="posts">
+									<article>
+										<a href="#" class="image"><img src="images/olist.png" alt="Diagrama do projeto olist" /></a>
+										<h3>Data Lakehouse: Olist</h3>
+										<p>Este projeto utilizou a arquitetura de Data Lakehouse no Databricks para gerenciar dados em camadas (Raw, Bronze, Silver e Gold) e simular cenários de ingestão com CDC (Change Data Capture). Os dados, oriundos de um dataset do Kaggle, foram enriquecidos para criar um pipeline completo, desde ingestão até análise de negócios.
 
+											Implementei governança de dados com Unity Catalog, orquestração com Databricks Workflows, e integração contínua via GitHub Actions. O projeto consolidou habilidades em pipelines de dados, automação e análise com a arquitetura Medallion, otimizando o uso de dados para insights e aplicações analíticas. <p>
 
-																						<!-- Lists -->
-
-																							<div class="row">
-																								<div class="col-6 col-12-small">
-
-
-
-																									<h4>Ferramentas utilizadas</h4>
-																									<ul>
-																										<li>Git, GitHub, LSF Git files</li>
-																										<li>Python, Pandas, Seaborn, Plotly</li>
-																										<li>Power BI</li>
-
-																									</ul>
-
-																						<ul class="actions">
-																							<li><a href="https://github.com/heitorfe/data_challenge_stone/" class="button">Saiba mais</a></li>
-																							<li><a href="https://app.powerbi.com/view?r=eyJrIjoiYTA4MmMyYTYtNTA2NC00ODAxLTljZjctYzUwYWE3ZmE2MDgwIiwidCI6Ijg3MDk0MzhmLTMzNDItNGI0Yy1hZDY5LTNkMjFlMmY4OTZlOSJ9" class="button">Dashboard</a></li>
-																						</ul>
-
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="images/sales.jpg" alt="" /></a>
-											<h3>Previsão de vendas</h3>
-											<p>Usei Python para fazer um modelo de Machine Learning para prever as vendas de cada loja, das 3 mil cadastradas, nas próximas 6 semanas. O modelo foi colocado em produção e pode ser requisitado via API pelo Telegram, bastando apenas ter acesso à internet para utilizá-lo. O modelo teve previsão de 90% do valor real, possibilitando o CFO de tomar decisões baseadas no faturamento futuro de cada unidade da loja e assim, poder fazer investimentos sem prejuízos.</p>
 											<!-- Lists -->
-
-												<div class="row">
-													<div class="col-6 col-12-small">
-
-														<h4>Ferramentas utilizadas</h4>
-														<ul>
-															<li>Git, GitHub</li>
-															<li>Python, Pandas, Seaborn, Boruta</li>
-															<li>Scikit-Learn e Scipy</li>
-															<li>Flask</li>
-															<li>Heroku Cloud</li>
-															<li>Telegram API</li>
-														</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/heitorfe/rossman-sales-predict" class="button">Saiba mais</a></li>
-											</ul>
-										</article>
-
-
-										<article>
-											<a href="#" class="image"><img src="images/cross-sell.jpg" alt="" /></a>
-											<h3>Classificação do clientes mais propensos a compra</h3>
-											<p>Usei Python para fazer um modelo de Machine Learning para fazer o ranqueamento dos clientes mais propensos a adquirir um novo produto (estratégia de cross sell). Com uma precisão de 33,5% para os 20.000 primeiros clientes da base, o time comercial é capaz de atingir os interessados com muito menos custo.<p>
-
-
-																						<!-- Lists -->
-
-																							<div class="row">
-																								<div class="col-6 col-12-small">
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<h4>Ferramentas utilizadas</h4>
+													<ul>
+														<li>Pandas</li>
+														<li>Git, GitHub, GitHub Actions</li>
+														<li>Azure Blob Storage, Parquet</li>
+														<li>Databricks, UnityCatalog</li>
+														<li>Spark, Delta Lake</li>
+														<li>Databricks Workflows</li>
+													</ul>
+													<ul class="actions">
+														<li><a href="https://github.com/heitorfelix/olist-pipeline" class="button">Saiba mais</a></li>
+													</ul>
+												</div>
+											</div>
+									</article>
+								</div>
+							</section>
 
 
 
-																									<h4>Ferramentas utilizadas</h4>
-																									<ul>
-																										<li>Git, GitHub</li>
-																										<li>Python, Pandas, Seaborn, Extra Tree Classifier</li>
-																										<li>Scikit-Learn, Scipy e Scikit-Plot</li>
-																										<li>Flask</li>
-																										<li>Heroku Cloud</li>
-																										<li>Google Sheets API com Google Scripts</li>
-																									</ul>
-
-																						<ul class="actions">
-																							<li><a href="https://github.com/heitorfe/health_insurance_cross_sale" class="button">Saiba mais</a></li>
-																						</ul>
-
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="images/cluster.jpg" alt="" /></a>
-											<h3>Fidelização de clientes com clusterização</h3>
-											<p>Usei Python para fazer um modelo de Machine Learning para encontrar os "Insiders", os melhores clientes da empresa. O objetivo desse projeto foi agrupar clientes com comportamentos parecidos para o time de negócios conseguir construir ações personalizada, baseadas nas características de cada cluster. <p>
-
-
-																						<!-- Lists -->
-
-																							<div class="row">
-																								<div class="col-6 col-12-small">
 
 
 
-																									<h4>Ferramentas utilizadas</h4>
-																									<ul>
-																										<li>Git, GitHub</li>
-																										<li>Python, Pandas, Seaborn, GMM</li>
-																										<li>Scikit-Learn, Scipy e Yellowbrick</li>
-																										<li>SQLite</li>
-																										<li>Metabase</li>
-																										<li>Papermill</li>
 
-																									</ul>
+							<!-- Section -->
+							<section>
+								<header class="major">
+									<h1>Projetos Antigos (2021 - 2022)</h1>
+								</header>
+								<div class="posts">
+									<article>
+										<a href="#" class="image"><img src="images/datachallenge.png" alt="" /></a>
+										<h3>Data Challenge Stone 2022</h3>
+										<p>Fui semifinalista no Data Challenge Stone 2022. Nesse desafio da Stone, minha tarefa foi utilizar dados históricos de um programa de empréstimos desde 2019 até abril de 2022 de 14,7 mil clientes. O problema de negócio era relacionado ao acionamento dos clientes que estavam com pagamento atrasado. A pergunta a ser respondida foi: Qual a curva ideal de vezes que devemos acionar um cliente? Para respondê-la utilizei Python e Power BI para responder a pergunta com a análise de dados. <p>
 
-																						<ul class="actions">
-																							<li><a href="https://github.com/heitorfe/insiders_clustering" class="button">Saiba mais</a></li>
-																						</ul>
+											<!-- Lists -->
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<h4>Ferramentas utilizadas</h4>
+													<ul>
+														<li>Git, GitHub, LSF Git files</li>
+														<li>Python, Pandas, Seaborn, Plotly</li>
+														<li>Power BI</li>
+													</ul>
+													<ul class="actions">
+														<li><a href="https://github.com/heitorfe/data_challenge_stone/" class="button">Saiba mais</a></li>
+														<li><a href="https://app.powerbi.com/view?r=eyJrIjoiYTA4MmMyYTYtNTA2NC00ODAxLTljZjctYzUwYWE3ZmE2MDgwIiwidCI6Ijg3MDk0MzhmLTMzNDItNGI0Yy1hZDY5LTNkMjFlMmY4OTZlOSJ9" class="button">Dashboard</a></li>
+													</ul>
+												</div>
+											</div>
+									</article>
 
-										</article>
+									<article>
+										<a href="#" class="image"><img src="images/sales.jpg" alt="" /></a>
+										<h3>Previsão de vendas</h3>
+										<p>Usei Python para fazer um modelo de Machine Learning para prever as vendas de cada loja, das 3 mil cadastradas, nas próximas 6 semanas. O modelo foi colocado em produção e pode ser requisitado via API pelo Telegram, bastando apenas ter acesso à internet para utilizá-lo. O modelo teve previsão de 90% do valor real, possibilitando o CFO de tomar decisões baseadas no faturamento futuro de cada unidade da loja e assim, poder fazer investimentos sem prejuízos.</p>
+										<!-- Lists -->
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<h4>Ferramentas utilizadas</h4>
+												<ul>
+													<li>Git, GitHub</li>
+													<li>Python, Pandas, Seaborn, Boruta</li>
+													<li>Scikit-Learn e Scipy</li>
+													<li>Flask</li>
+													<li>Heroku Cloud</li>
+													<li>Telegram API</li>
+												</ul>
+												<ul class="actions">
+													<li><a href="https://github.com/heitorfe/rossman-sales-predict" class="button">Saiba mais</a></li>
+												</ul>
+											</div>
+										</div>
+									</article>
 
+									<article>
+										<a href="#" class="image"><img src="images/cross-sell.jpg" alt="" /></a>
+										<h3>Classificação de clientes mais propensos a compra</h3>
+										<p>Usei Python para fazer um modelo de Machine Learning para fazer o ranqueamento dos clientes mais propensos a adquirir um novo produto (estratégia de cross sell). Com uma precisão de 33,5% para os 20.000 primeiros clientes da base, o time comercial é capaz de atingir os interessados com muito menos custo.<p>
 
+											<!-- Lists -->
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<h4>Ferramentas utilizadas</h4>
+													<ul>
+														<li>Git, GitHub</li>
+														<li>Python, Pandas, Seaborn, Extra Tree Classifier</li>
+														<li>Scikit-Learn, Scipy e Scikit-Plot</li>
+														<li>Flask</li>
+														<li>Heroku Cloud</li>
+														<li>Google Sheets API com Google Scripts</li>
+													</ul>
+													<ul class="actions">
+														<li><a href="https://github.com/heitorfe/health_insurance_cross_sale" class="button">Saiba mais</a></li>
+													</ul>
+												</div>
+											</div>
+									</article>
 
-										<article>
-											<a href="#" class="image"><img src="images/designkc.png" alt="" /></a>
-											<h3>Análise de dados House Rocket</h3>
-											<p>Eu usei Python e Power BI para fazer uma análise exploratória de dados e com isso confirmei ou não algumas hipóteses sobre o negócio, tendo como resultado insights para melhor performance do negócio. A análise teve como objetivo aumentar a receita da empresa fictícia, House Rocket, que funciona com a compra e venda de imóveis, encontrando os melhores momentos para se comprar ou vender o imóvel. <p>
+									<article>
+										<a href="#" class="image"><img src="images/cluster.jpg" alt="" /></a>
+										<h3>Fidelização de clientes com clusterização</h3>
+										<p>Usei Python para fazer um modelo de Machine Learning para encontrar os "Insiders", os melhores clientes da empresa. O objetivo desse projeto foi agrupar clientes com comportamentos parecidos para o time de negócios conseguir construir ações personalizada, baseadas nas características de cada cluster. <p>
 
+											<!-- Lists -->
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<h4>Ferramentas utilizadas</h4>
+													<ul>
+														<li>Git, GitHub</li>
+														<li>Python, Pandas, Seaborn, GMM</li>
+														<li>Scikit-Learn, Scipy e Yellowbrick</li>
+														<li>SQLite</li>
+														<li>Metabase</li>
+														<li>Papermill</li>
+													</ul>
+													<ul class="actions"></ul>
+														<li><a href="https://github.com/heitorfe/insiders_clustering" class="button">Saiba mais</a></li>
+													</ul>
+												</div>
+											</div>
+									</article>
 
-																						<!-- Lists -->
+									<article>
+										<a href="#" class="image"><img src="images/designkc.png" alt="" /></a>
+										<h3>Análise de dados House Rocket</h3>
+										<p>Eu usei Python e Power BI para fazer uma análise exploratória de dados e com isso confirmei ou não algumas hipóteses sobre o negócio, tendo como resultado insights para melhor performance do negócio. A análise teve como objetivo aumentar a receita da empresa fictícia, House Rocket, que funciona com a compra e venda de imóveis, encontrando os melhores momentos para se comprar ou vender o imóvel. <p>
 
-																							<div class="row">
-																								<div class="col-6 col-12-small">
+											<!-- Lists -->
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<h4>Ferramentas utilizadas</h4>
+													<ul>
+														<li>Git, GitHub</li>
+														<li>Python, Pandas, Seaborn, Plotly</li>
+														<li>Geopy API</li>
+														<li>Power BI</li>
+														<li>SQLite</li>
+													</ul>
+													<ul class="actions">
+														<li><a href="https://github.com/heitorfe/kc-house-insights" class="button">Saiba mais</a></li>
+														<li><a href="https://app.powerbi.com/view?r=eyJrIjoiNzExYzgyMDQtZjU5ZC00YzAzLTk4MzItYTI3MGQ2ZDM5MDJhIiwidCI6Ijg3MDk0MzhmLTMzNDItNGI0Yy1hZDY5LTNkMjFlMmY4OTZlOSJ9&pageName=ReportSection25f6ac0f4d2653587e84" class="button">Dashboard</a></li>
+													</ul>
+												</div>
+											</div>
+									</article>
+								</div>
+							</section>
 
-
-
-																									<h4>Ferramentas utilizadas</h4>
-																									<ul>
-																										<li>Git, GitHub</li>
-																										<li>Python, Pandas, Seaborn, Plotly</li>
-																										<li>Geopy API</li>
-																										<li>Power BI</li>
-																										<li>SQLite</li>
-
-																									</ul>
-
-																						<ul class="actions">
-																							<li><a href="https://github.com/heitorfe/kc-house-insights" class="button">Saiba mais</a></li>
-																							<li><a href="https://app.powerbi.com/view?r=eyJrIjoiNzExYzgyMDQtZjU5ZC00YzAzLTk4MzItYTI3MGQ2ZDM5MDJhIiwidCI6Ijg3MDk0MzhmLTMzNDItNGI0Yy1hZDY5LTNkMjFlMmY4OTZlOSJ9&pageName=ReportSection25f6ac0f4d2653587e84" class="button">Dashboard</a></li>
-																						</ul>
-
-										</article>
-
-									</div>
-								</section>
+								
 
 								<!-- contato -->
 									<section>
