@@ -186,6 +186,33 @@
 									<h1>Projects</h1>
 								</header>
 								<div class="posts">
+																		<article>
+										<a href="https://github.com/heitorfe/pipeline-deputados" class="image"><img src="images/deputados.png" alt="Deputies project diagram" /></a>
+										<h3>Brazilian Congress Deputies Data Pipeline</h3>
+										<p>Complete data pipeline focused on data engineering, with automated ingestion of public information from all federal deputies. 
+											The data includes biography, mandates, expenses and parliamentary activity, extracted via official API. 
+											The architecture implements a modern ELT approach with Snowflake and dbt. 
+											Daily incremental ingestion is orchestrated with Airflow and stored in S3 in Parquet format. 
+											Transformations follow robust dimensional modeling patterns (SCD Type 2). 
+											The project ensures end-to-end scalability, automation and data quality.<p>
+
+											<!-- Lists -->
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<h4>Tools used</h4>
+													<ul>
+														<li>Python, Pandas and requests</li>
+														<li>Apache Airflow</li>
+														<li>Amazon S3 and SQS</li>
+														<li>Snowflake, Snowpipe</li>
+														<li>dbt Core</li>
+													</ul>
+													<ul class="actions">
+														<li><a href="https://github.com/heitorfe/pipeline-deputados" class="button">Learn more</a></li>
+													</ul>
+												</div>
+											</div>
+										</article>
 									<article>
 										<a href="#" class="image"><img src="images/olist.png" alt="Olist project diagram" /></a>
 										<h3>Data Lakehouse: Olist</h3>

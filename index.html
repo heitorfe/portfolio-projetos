@@ -188,6 +188,33 @@
 								</header>
 								<div class="posts">
 									<article>
+										<a href="https://github.com/heitorfe/pipeline-deputados" class="image"><img src="images/deputados.png" alt="Diagrama do projeto deputados" /></a>
+										<h3>Pipeline de Dados da Câmara dos Deputados</h3>
+										<p>Pipeline de dados completo voltado para engenharia de dados, com ingestão automatizada de informações públicas de todos os deputados federais. 
+											Os dados incluem biografia, mandatos, despesas e atividade parlamentar, extraídos via API oficial. 
+											A arquitetura implementa uma abordagem moderna de ELT com Snowflake e dbt. 
+											A ingestão incremental diária é orquestrada com Airflow e armazenada no S3 em formato Parquet. 
+											Transformações seguem padrões robustos de modelagem dimensional (SCD Type 2). 
+											O projeto garante escalabilidade, automação e qualidade de dados ponta a ponta.<p>
+
+											<!-- Lists -->
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<h4>Ferramentas utilizadas</h4>
+													<ul>
+														<li>Python, Pandas e requests</li>
+														<li>Apache Airflow</li>
+														<li>Amazon S3 e SQS</li>
+														<li>Snowflake, Snowpipe</li>
+														<li>dbt Core</li>
+													</ul>
+													<ul class="actions">
+														<li><a href="https://github.com/heitorfe/pipeline-deputados" class="button">Saiba mais</a></li>
+													</ul>
+												</div>
+											</div>
+									</article>
+									<article>
 										<a href="https://github.com/heitorfelix/olist-pipeline" class="image"><img src="images/olist.png" alt="Diagrama do projeto olist" /></a>
 										<h3>Data Lakehouse: Olist</h3>
 										<p>Este projeto utilizou a arquitetura de <strong>Data Lakehouse no Databricks</strong> para gerenciar dados em camadas (Raw, Bronze, Silver e Gold) e simular cenários de ingestão com CDC (Change Data Capture). Os dados, oriundos de um dataset do Kaggle, foram enriquecidos para criar um pipeline completo, desde ingestão até análise de negócios.
