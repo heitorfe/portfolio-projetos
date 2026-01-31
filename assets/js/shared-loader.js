@@ -67,6 +67,12 @@
 
   // Auto-load shared content when DOM is ready
   document.addEventListener('DOMContentLoaded', function() {
+    // Load skills
+    const skillsPlaceholder = document.getElementById('skills-placeholder');
+    if (skillsPlaceholder) {
+      loadSharedContent('skills-placeholder', 'shared/skills.html');
+    }
+
     // Load certifications
     const certPlaceholder = document.getElementById('certifications-placeholder');
     if (certPlaceholder) {

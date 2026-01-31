@@ -134,3 +134,16 @@
     transform: translateX(-50%);
   }
 }
+
+/* Faster carousel on mobile */
+@media (max-width: 768px) {
+  .carousel-track {
+    animation-duration: 12s;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-track {
+    animation-duration: 10s;
+  }
+}

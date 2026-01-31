@@ -2404,3 +2404,44 @@ html[lang="en"] .posts article.featured::before,
   margin-bottom: 0.5em;
   color: #ffffff;
 }
+
+/* Project Layout - Featured alone, others in 2 columns */
+.posts article:not(.featured) {
+  width: calc(50% - 6em);
+}
+
+@media screen and (max-width: 736px) {
+  .posts article:not(.featured) {
+    width: calc(50% - 4.5em);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .posts article:not(.featured) {
+    width: 100%;
+  }
+}
+
+/* Featured Skill Card */
+.features article.skill-featured {
+  width: 100%;
+  flex-basis: 100%;
+  background: rgba(74, 144, 226, 0.08);
+  border-left: 4px solid #4a90e2;
+  padding: 1.5em;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 2em;
+}
+
+.features article.skill-featured .icon {
+  color: #4a90e2;
+}
+
+.features article.skill-featured h3 {
+  color: #6eb5ff;
+  font-size: 1.3em;
+}
+
+.features article.skill-featured ul li {
+  margin-bottom: 0.5em;
+}
