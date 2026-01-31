@@ -2271,3 +2271,87 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* CSS Custom Properties for Light Theme */
+:root {
+  --bg-color: #f5f6f7;
+  --text-color: #7f888f;
+  --accent-color: #f56a6a;
+}
+
+/* Featured Project Styles */
+.posts article.featured {
+  width: 100%;
+  flex-basis: 100%;
+  border-left: 4px solid var(--accent-color);
+  padding-left: 2em;
+  background: rgba(0, 0, 0, 0.02);
+  position: relative;
+}
+
+.posts article.featured::before {
+  content: 'Destaque';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--accent-color);
+  color: #fff;
+  padding: 0.3em 0.8em;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* English version */
+html[lang="en"] .posts article.featured::before,
+.posts article.featured.en::before {
+  content: 'Featured';
+}
+
+/* Technology Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1em 0;
+}
+
+.tech-tag {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.75em;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.05);
+  color: #5a5a5a;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+.tech-tag.data-eng {
+  background: rgba(74, 144, 226, 0.15);
+  border-color: rgba(74, 144, 226, 0.3);
+  color: #2d6cb5;
+}
+
+.tech-tag.cloud {
+  background: rgba(245, 106, 106, 0.15);
+  border-color: rgba(245, 106, 106, 0.3);
+  color: #c44545;
+}
+
+.tech-tag.ml-ai {
+  background: rgba(126, 211, 33, 0.15);
+  border-color: rgba(126, 211, 33, 0.3);
+  color: #4d8a1a;
+}
+
+/* Carousel text color for light theme */
+.carousel-card p {
+  color: #5a5a5a;
+}

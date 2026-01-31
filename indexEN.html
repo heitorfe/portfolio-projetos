@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link id="theme-link" rel="stylesheet" href="assets/css/dark.css">
+		<link rel="stylesheet" href="assets/css/carousel.css">
 
 	</head>
 	
@@ -130,41 +131,39 @@
 </section>
 
 <!-- Certifications -->
-<section>
-	<header class="major">
-		<h1>Certifications</h1>
-	</header>
-	<div class="certifications" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-		<article style="flex: 1; min-width: 200px; text-align: center;">
-			<a href="https://learn.microsoft.com/pt-br/users/heitorfelix-3524/credentials/8ba7aa2e301e72f9?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="image"><img src="images/dp203.png" alt="DP-203 Certification" style="width: 100px; height: auto;" /></a>
-			<div class="content">
-				<h3>Microsoft Certified: Azure Data Engineer Associate</h3>
-				<p>DP-203</p>
-			</div>
-		</article>
-		<article style="flex: 1 1 200px; text-align: center;">
-			<a href="https://learn.microsoft.com/en-us/users/heitorfelix-3524/credentials/7920c5d8726d106d?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="image"><img src="images/az900.png" alt="AZ-900 Certification" style="width: 100px; height: auto;" /></a>
-			<div class="content">
-				<h3>Microsoft Certified: Azure Fundamentals</h3>
-				<p>AZ-900</p>
-			</div>
-		</article>
-		<article style="flex: 1; min-width: 200px; text-align: center;">
-			<a href="https://learn.microsoft.com/pt-br/users/heitorfelix-3524/credentials/6dcd1256b7254b78?ref=https%3A%2F%2Fwww.linkedin.com%2F" class="image"><img src="images/dp900.png" alt="DP-900 Certification" style="width: 100px; height: auto;" /></a>
-			<div class="content">
-				<h3>Microsoft Certified: Azure Data Fundamentals</h3>
-				<p>DP-900</p>
-			</div>
-		</article>
-		<article style="flex: 1; min-width: 200px; text-align: center;">
-			<a href="https://www.credly.com/badges/0be646d9-6bdb-417d-83fe-76c776fa77e8/public_url" class="image"><img src="images/astronomer.png" alt="Astronomer Certification" style="width: 100px; height: auto;" /></a>
-			<div class="content">
-				<h3>Astronomer Certification for Apache Airflow 3 Fundamentals</h3>
-				<p>Astronomer</p>
-			</div>
-		</article>
-
-	</div>
+<section id="certifications-carousel">
+  <header class="major">
+    <h1>Certifications</h1>
+  </header>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- Certification cards -->
+      <div class="carousel-card">
+        <a href="https://learn.microsoft.com/pt-br/users/heitorfelix-3524/credentials/8ba7aa2e301e72f9">
+          <img src="images/dp203.png" alt="DP-203 Certification">
+        </a>
+        <p>Azure Data Engineer Associate</p>
+      </div>
+      <div class="carousel-card">
+        <a href="https://learn.microsoft.com/en-us/users/heitorfelix-3524/credentials/7920c5d8726d106d">
+          <img src="images/az900.png" alt="AZ-900 Certification">
+        </a>
+        <p>Azure Fundamentals</p>
+      </div>
+      <div class="carousel-card">
+        <a href="https://learn.microsoft.com/pt-br/users/heitorfelix-3524/credentials/6dcd1256b7254b78">
+          <img src="images/dp900.png" alt="DP-900 Certification">
+        </a>
+        <p>Azure Data Fundamentals</p>
+      </div>
+      <div class="carousel-card">
+        <a href="https://www.credly.com/badges/0be646d9-6bdb-417d-83fe-76c776fa77e8/public_url">
+          <img src="images/astronomer.png" alt="Astronomer Certification">
+        </a>
+        <p>Apache Airflow Fundamentals</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 															<!-- Experience -->
@@ -188,7 +187,41 @@
 									<h1>Projects</h1>
 								</header>
 								<div class="posts">
-																		<article>
+									<article class="featured en">
+										<a href="https://github.com/heitorfe/olist-lakehouse-2.0" class="image"><img src="images/olist2.png" alt="Olist Lakehouse 2.0 Architecture" /></a>
+										<h3>Advanced Data Lakehouse: Olist Lakehouse 2.0</h3>
+										<div class="tech-tags">
+											<span class="tech-tag data-eng">Databricks</span>
+											<span class="tech-tag data-eng">Delta Lake</span>
+											<span class="tech-tag data-eng">dbt</span>
+											<span class="tech-tag cloud">Azure</span>
+											<span class="tech-tag data-eng">PySpark</span>
+										</div>
+										<p>This is the second version of the Olist project, now implementing modern data engineering practices in the <strong>Databricks Lakehouse</strong> with focus on declarative pipelines, governance, and incremental processing at scale.
+											The architecture follows the <strong>Medallion pattern (Bronze, Silver, Gold)</strong> using <strong>Lakeflow Declarative Pipelines</strong> (formerly Delta Live Tables), with continuous ingestion via <strong>AutoLoader</strong> and change tracking with <strong>AUTO CDC</strong> for SCD Type 1 and Type 2 dimensions.
+											The project incorporates <strong>Data Quality with expectations</strong> at all layers, centralized governance with <strong>Unity Catalog</strong>, data lineage, and separation of pipelines for append-only transactional data and entities with historical changes.
+											All infrastructure and pipelines are deployed via <strong>Databricks Asset Bundles</strong>, with automated CI/CD, code validation, testing, and deployment across development, staging, and production environments.</p>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<h4>Tools used</h4>
+												<ul>
+													<li>Databricks Lakehouse & Delta Lake</li>
+													<li>Lakeflow Declarative Pipelines (DLT)</li>
+													<li>AutoLoader (incremental ingestion)</li>
+													<li>AUTO CDC (SCD Type 1 and Type 2)</li>
+													<li>Unity Catalog (governance and lineage)</li>
+													<li>Databricks Asset Bundles (IaC)</li>
+													<li>GitHub Actions (CI/CD)</li>
+													<li>SQL, PySpark</li>
+												</ul>
+												<ul class="actions">
+													<li><a href="https://github.com/heitorfe/olist-lakehouse-2.0" class="button">Learn more</a></li>
+												</ul>
+											</div>
+										</div>
+									</article>
+
+									<article>
 										<a href="https://github.com/heitorfe/pipeline-deputados" class="image"><img src="images/deputados.png" alt="Deputies project diagram" /></a>
 										<h3>Brazilian Congress Deputies Data Pipeline</h3>
 										<p>Complete data pipeline focused on data engineering, with automated ingestion of public information from all federal deputies. 
@@ -448,6 +481,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/theme-toggle.js"></script>
+			<script src="assets/js/carousel.js"></script>
 
 	</body>
 </html>
