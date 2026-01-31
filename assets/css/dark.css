@@ -2374,3 +2374,33 @@ html[lang="en"] .posts article.featured::before,
 .carousel-card p {
   color: #b0b0b0;
 }
+
+/* Experience period badge */
+.experience-period {
+  display: inline-block;
+  background: rgba(245, 106, 106, 0.15);
+  color: #f56a6a;
+  padding: 0.25em 0.75em;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  border: 1px solid rgba(245, 106, 106, 0.3);
+}
+
+.project {
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project h2 {
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
