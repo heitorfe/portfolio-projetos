@@ -2351,6 +2351,12 @@ html[lang="en"] .posts article.featured::before,
   color: #4d8a1a;
 }
 
+.tech-tag.viz {
+  background: rgba(156, 136, 255, 0.15);
+  border-color: rgba(156, 136, 255, 0.3);
+  color: #6b5abd;
+}
+
 /* Carousel text color for light theme */
 .carousel-card p {
   color: #5a5a5a;
